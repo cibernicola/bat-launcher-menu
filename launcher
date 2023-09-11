@@ -1,0 +1,33 @@
+
+@echo off
+
+:menu
+cls
+echo Select an option (all options have port 15467):
+echo 1. Lorem Ipsum
+echo 2. Lorem Ipsum
+echo 3. Lorem Ipsum
+echo 4. Lorem Ipsum
+
+choice /c 1234 /n /t 5 /d 1 /m "Select an Option or Option 1 will be executed in 5 seconds: "
+
+rem Check the selected Option
+if errorlevel 4 (
+    echo You have selected Option 4
+    rem Add the code for Option 4 here
+) else if errorlevel 3 (
+    echo You have selected Option 3
+    Add the code for Option 4 here
+) else if errorlevel 2 (
+    echo You have selected Option 2
+    Add the code for Option 2 here
+) else if errorlevel 1 (
+    echo You have selected Option 1
+    Add the code for Option 1 here
+
+) else (
+    echo Option 1 will be executed automatically
+    Add the code for Option 1 
+)
+
+go to :menu
